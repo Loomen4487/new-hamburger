@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 모든 태그에 적용 */
+        /* #orange {
+            color: orange;
+        } */
+
+        /* .orange{              /*복합 선택시*/
+            /* color: red;
+        } */ */
+        /* id와 class에서의 css 적용 우선순위는 id가 높다. */
+
+        span.orange{
+            color: orange;
+        }
+        /* 바로 인접(형제) 요소를 나타냄(형제 선택자)*/
+        /* ul > .orange{       >는 모든 자식(자손(후손)X) 요소를 나타냄 */
+            /* color: red; */
+        /* } */
+
+        /* 띄어쓰기 -> 모든 자손(후손)(자식포함) 요소를 나타냄(하위 선택지) */
+        ul .orange{
+            color: blueviolet;
+        }
+
+        div .orange{
+            color: blueviolet;
+        }
+
+        .orange + li{
+            color: blueviolet;
+        }
+
+        .orange ~ li{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>사과</li>
+            <li>딸기</li>
+            <li id="orange" class="orange">
+                오렌지
+                </ul>
+            </li>
+        </ul>
+        <div>당근</div>
+        <p>토마토</p>
+        <span class="orange">오렌지</span>
+        <span>포도</span>
+    </div>
+</body>
+</html>

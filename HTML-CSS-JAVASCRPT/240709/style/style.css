@@ -1,0 +1,44 @@
+body, html {
+    margin: 0px;
+    height: 0px;
+    color: black;
+}
+
+.wrapper {
+
+}
+
+header {
+    height: 80px;
+    background-color: royalblue;
+}
+main {
+
+}
+section {
+    height: 200px;
+}
+section:nth-child(1) {
+    background-color: red;
+}
+section:nth-child(2) {
+    background-color: orange;
+}
+section:nth-child(3) {
+    background-color: blueviolet;
+}
+footer {
+    height: 80px;
+    background-color: brown;
+}
+
+@media (min-width: 700px) { /* pc메뉴 */
+    .top--bar > .moba--bar{
+        display: none;      /* Mobile메뉴화면이 사라짐*/
+    }
+}
+@media (max-width: 699px) { /* Mobile화면*/
+    .top--bar > .pc--bar{
+        display: none;       /* pc메뉴화면이 사라짐*/
+    }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="num">0</h2>
+    <div>
+        <button id="inc">+1 증가</button>
+        <button id="dec">-1 하락</button>
+    </div>
+    <script>
+       // DOM을 선택하기
+       const num = document.getElementById('num');
+       const inc = document.getElementById('inc');
+       const dec = document.getElementById('dec');
+
+       console.log(num.innerText);  // 내용숫자
+       console.log(inc.offsetTop);  // top 위치
+       console.log(dec.id);         // id 속성 값
+
+       // 이벤트 리스너 등록하기
+       inc.onclick = () => {
+        // console.log("inc가 클릭됨");
+        const currentValue = parseInt(num.innerText);
+        num.innerText = currentValue + 1;
+        };
+       dec.onclick = () => {
+        // console.log("dec가 클릭됨");
+        const currentValue = parseInt(num.innerText);
+        num.innerText = currentValue - 1;
+       };
+    </script>
+</body>
+</html>

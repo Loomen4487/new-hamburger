@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>클릭(프로퍼티리스너)</button>
+    <button>클릭(이벤트 등록 리스너)</button>
+    <script>
+        const buttonEl = document.querySelector('button');
+        buttonEl.onclick = function(){
+            alert('클릭됨');
+        }
+
+        const buttonEl2 = document.querySelectorAll('button')[1];
+        buttonEl2.addEventListener('click', function() {
+            alert('클릭됨2');
+        });
+        const clickEvent3 = () => {
+            alert('클릭됨3');
+        }
+        buttonEl2.addEventListener('click', clickEvent3);
+    </script>
+</body>
+</html>

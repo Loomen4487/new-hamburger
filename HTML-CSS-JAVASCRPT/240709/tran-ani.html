@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* .red-box{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition-duration: 1s, 500ms, 2s;
+            transition-delay: 1s;
+        }
+        .red-box:hover {
+            background-color: blue;
+        } */
+        /* div{
+            width: 100px;
+            height: 100px;
+            background-color: violet;
+            animation-name: bgchange;
+            animation-duration: 5s;
+            animation-delay: 3s;
+            animation-fill-mode: forwards;
+            animation-iteration-count:3 ;
+        } */
+        /* @keyframes bgchange {
+            0%{background-color: red;}
+            25%{background-color: orange;}
+            50%{background-color: yellow;}
+            100%{background-color: green;}
+        } */
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            animation-name: move;
+            animation-duration: 10s;
+            animation-fill-mode: forwards;
+            animation-play-state: paused;
+        }
+        @keyframes move {
+            from{
+                left:0;
+            }
+            to {
+                left:300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="red-box"></div> -->
+    <div></div>
+    <button id="start">start</button>
+    <button id="paused">paused</button>
+    <script>
+        // const box= document.querySelector("div");
+        // document.getElementById("start").addEventListener("click", fution(){
+        //   box.style.animationPlayState="paused"
+        // })
+    </script>
+</body>
+</html>

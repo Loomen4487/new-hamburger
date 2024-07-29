@@ -1,0 +1,303 @@
+/* smap 및 sub_tit css */
+.smap {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center; /* 수직 중앙 정렬 */
+    font-size: 15px;
+    margin: 0 auto;
+    padding: 15px 40px;
+    border: none;
+    box-shadow: none;
+    list-style: none;
+}
+
+.smap li {
+    display: inline; /* li 요소를 인라인으로 처리 */
+    margin-right: 10px; /* 각 li 요소 사이의 간격 조정 */
+}
+
+.containerBox {
+    position: relative;
+}
+
+.containerBox .web_container {
+    /* 필요 시 추가 스타일 */
+}
+
+.containerBox .web_container .sub_tit_wrap {
+    display: flex;
+    justify-content: space-between; /* 페이지 타이틀과 버튼들을 양 끝에 배치 */
+    align-items: center; /* 수직 정렬 중앙 */
+    border: none;
+    box-shadow: none;
+    width: 100%;
+    padding: 10px 0; /* 여백 조정을 위해 패딩 추가 */
+}
+
+.containerBox .web_container .sub_tit_wrap .page_tit {
+    margin: 0; /* 페이지 타이틀의 여백 제거 */
+    font-size: 2.5rem;
+    line-height: 100%;
+    color: brown;
+    display: flex;
+    align-items: center; /* 수직 중앙 정렬 */
+}
+
+.containerBox .web_container .sub_tit_wrap .sub_tit {
+    position: relative;
+    display: flex;
+    align-items: center; /* 수직 중앙 정렬 */
+    margin-top: 30px;
+}
+
+.containerBox .web_container .sub_tit_wrap .sub_tit ul {
+    display: flex; /* li 요소들을 가로로 정렬 */
+    align-items: center; /* 수직 중앙 정렬 */
+    margin: 0; /* 상단 마진 제거 */
+    padding: 0; /* 패딩 제거 */
+    list-style: none; /* 기본 리스트 스타일 제거 */
+    gap: 0px;
+}
+
+.containerBox .web_container .sub_tit_wrap .sub_tit ul li {
+    display: flex;
+    align-items: center; /* 수직 중앙 정렬 */
+    border: none;
+    box-shadow: none;
+    margin-right: 0px; /* 리스트 아이템 간격 조정 */
+}
+
+button {
+    color: #e22219;
+    border-bottom-color: #e22219;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 5px 20px;
+    font-size: 1rem;
+    align-self: center;
+    margin: 0; /* 여백 제거 */
+}
+
+button:focus, button:hover {
+    outline: none;
+    background-color: rgba(226, 34, 25, 0.1);
+}
+
+.search_wrap .search_itmes {
+    display: flex;
+    justify-content: center;
+    margin: 18px 0;
+    background-color: rgb(244, 244, 242);
+    padding: 20px;
+    border: none;
+    box-shadow: none;
+}
+
+
+/* 리스트 css */
+.notice_list {
+	margin-top: 34px;
+}
+.notice_list .notice_header {
+	width: 100%;
+	display: flex;
+	padding: 20px 0;
+	border-top-width: 3px;
+	border-top-style: solid;
+	border-top-color: brown;
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: #e5e5e5;
+}
+.notice_list .notice_header .notice_no,
+.notice_list .notice_header .notice_title,
+.notice_list .notice_header .notice_regdate,
+.notice_list .notice_header .notice_views {
+	text-align: center;
+	font-size: 15px;
+	font-weight: 900;
+	letter-spacing: -1px;
+}
+.notice_list .notice_header .notice_no {
+	width: 10%;
+}
+.notice_list .notice_header .notice_title {
+	width: 60%;
+}
+.notice_list .notice_header .notice_regdate {
+	width: 15%;
+}
+.notice_list .notice_header .notice_views {
+	width: 15%;
+}
+.notice_list .notice_list_items {
+    padding: 12px 0;
+    border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: brown;
+}
+
+.notice_list .notice_list_items ul {
+	display: flex;
+	width: 100%;
+}
+.notice_list .notice_list_items ul li {
+    display: flex;
+}
+.notice_list .notice_list_items ul li:nth-child(1) {
+	width: 10%;
+	text-align: center;
+}
+.notice_list .notice_list_items ul li:nth-child(2) {
+	padding-left: 20px;
+	width: 60%;
+}
+.notice_list .notice_list_items ul li:nth-child(2) a {
+	color: #000;
+	text-decoration: none; 
+}
+.notice_list .notice_list_items ul li:nth-child(2) a:hover {
+	text-decoration: underline;
+}
+.notice_list .notice_list_items ul li:nth-child(3) {
+	width: 15%;
+	text-align: center;
+}
+.notice_list .notice_list_items ul li:nth-child(4) {
+	width: 15%;
+	text-align: center;
+}
+
+.page {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto; /* Centers the page div */
+}
+
+.pagination {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin-top: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination li {
+    display: inline;
+    text-align: center;
+}
+
+.pagination a {
+    display: block;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 5px 12px;
+    color: #96a0ad;
+    line-height: 1.5;
+}
+
+.first {
+    margin-right: 15px;
+}
+
+.last {
+    margin-left: 15px;
+}
+
+.first:hover, .last:hover, .left:hover, .right:hover {
+    color: #2e9cdf;
+}
+
+.pagination a.active {
+    cursor: pointer;
+    color: black;
+}
+
+.pagination a:active {
+    outline: none;
+}
+
+.modal .num {
+    margin-left: 3px;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 100%;
+}
+
+.modal .num:hover {
+    background-color: #2e9cdf;
+    color: #ffffff;
+}
+
+.modal .num:active {
+    background-color: #2e9cdf;
+    cursor: pointer;
+}
+
+.arrow-left {
+    width: 0;
+    height: 0;
+    border-top: 10px solid;
+    border-bottom: 10px solid;
+    border-right: 10px solid blue;
+}
+
+
+/* detail css*/
+.notice_detail {
+	margin-top: 34px;
+	display: flex;
+	flex-direction: column; /* 자식 요소들을 세로로 나열 */
+	align-items: center; /* 자식 요소들을 수평으로 가운데 정렬 */
+}
+
+.notice_detail .notice_detail_header {
+	width: 100%;
+	display: flex;
+	padding: 20px 0;
+	justify-content: space-between;
+	border-top-width: 3px;
+	border-top-style: solid;
+	border-top-color: #e22219;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: rgb(173, 170, 170);
+}
+
+.notice_detail .notice_detail_header .notice_detail_title {
+	font-size: 18px;
+	font-weight: 900;
+	margin-left: 30px;
+}
+
+.notice_detail .notice_detail_content {
+	width: 100%; /* 컨텐츠의 너비를 100%로 설정하여 경계선이 전체 너비에 걸쳐 보이게 설정 */
+	padding: 20px 0;
+	border-bottom-width: 3px;
+	border-bottom-style: solid;
+	border-bottom-color: brown;
+	display: flex;
+	justify-content: center; /* 버튼을 수평으로 가운데 정렬 */
+	align-items: center; /* 버튼을 수직으로 가운데 정렬 */
+	box-sizing: border-box; /* 경계선을 포함하여 요소의 크기를 계산 */
+}
+
+.notice_detail .notice_detail_list_btn {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5rem;
+	line-height: 46px;
+	border: 3px solid brown;
+	background-color: brown;
+	border-radius: 3px;
+	width: 216px;
+	height: 68px;
+	margin-top: 20px; /* 버튼과 경계선 사이의 간격 설정 */
+}

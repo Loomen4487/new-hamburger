@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* hover 가상선택자 -> 선택지 요소에 마우스 커서가 올라가 있는동안 선택 */
+        /* a:hover{
+            color: red;
+        }
+        li:hover{
+            color: blue;
+        } */
+
+        /* active 가상선택자 -> 선택자 요소에 마우스 클릭하는 동안 선택 */
+        /* a:active{
+            color: red;
+        } */
+
+        /* input:focus{
+            background-color: red;
+            color: blue;
+        } */
+
+        /* first-child -> 선택지가 형제 요소 중 첫 번째이라면 선택 */
+        /* .fruit span:first-child {
+            color: red;
+        } */
+        
+        /* first-child -> div가 형재 요소 중 첫째가 아니라서 아래 예제에는 적용이 안됨 */
+        /* .fruit div:first-child {
+            color: red;
+        } */
+
+        /* last-child -> 선택지가 형제 요소 중 마지막이라면 선택 */
+        /* .fruit h3:last-child {
+            color: red;
+        } */
+
+        /* nth-child(n) -> 모든 선택지가 형제 요소의 n번째 선택 */
+        /* .fruit *:nth-child(2){
+            color: blue;
+        } */
+
+        /* nth-child(2n) -> 모든 선택지가 형제 요소의 2n번째(짝수) 선택 */
+        /* .fruit *:nth-child(2n){
+            color: blue;
+        } */
+
+        /* nth-child(2n+1) -> 모든 선택지가 형제 요소의 2n+1번째(홀수) 선택 (or 마이너스도 가능) */
+        /* .fruit *:nth-child(2n+1){
+            color: red;
+        } */
+
+        .fruit *:not(span){
+            color: magenta;
+        }
+
+        /* 선택자box요소의 컨텐츠 앞에 내용을 삽입 */
+        .box::before{
+            content: '앞';
+            color: red;
+        }
+
+        /* 선택자box요소의 컨텐츠 뒤에 내용을 삽입 */
+        .box::after{
+            content: '뒤';
+            color: blue;
+        }
+        
+        /* type를 포함한 모든 요소 선택 */
+        [type]{
+            background-color: aqua;
+        }
+
+        /* disabled를 포함한 모든 요소 선택 */
+        [disabled] {
+            background-color: red;
+        }
+
+        /* type이 password를 포함한 모든 요소 선택 */
+        [type=password]{
+            background-color: red;
+        }
+
+        /* nth-of-type -> 순서와 상관없이 n개수만큼의 위치의 태그 디자인이 적용됨 <-> nth-child*/
+        div p:nth-of-type(2) {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>rorem 1</p>
+        <span>span 1</span>
+        <p>rorem 2</p>
+    </div>
+    <div>
+        <p>rorem 3</p>
+        <span>span 2</span>
+        <span>span 3</span>
+        <p>rorem 4</p>
+    </div>
+    <br><br><br><br>
+
+    <!-- <a href="https:/www.naver.com">NAVER</a>
+    <input type="text" /> -->
+    <input type="password" />
+    <input type="text" disabled />
+    <div class="box">
+        content
+    </div>
+        <div class="fruit">
+            <span>딸기</span>
+            <span>수박</span>
+            <div>오렌지</div>
+            <p>망고</p>
+            <h3>사과</h3>
+        </div>
+</body>
+</html>

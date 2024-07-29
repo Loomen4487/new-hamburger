@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="https://www.naver.com" id ="naver-id">네이버 이동</a>
+    <a href="https://www.daum.com" id ="daum-id">다음 이동</a>
+    <script>
+        // const aEls = document.querySelectorAll('a');
+        // aEls.forEach(aEl => {
+        //     aEl.addEventListener('click', function(e){
+        //         // 기본 이벤트를 취소
+        //         e.preventDefault();
+
+        //         // aEl의 아이디 값 가져오기
+        //         if(aEl.getAttribute('id').value === 'naver-id'){
+        //             // this는 aEl를 가리킴
+        //             this.style.backgroundColor = 'yellow';
+        //         }
+        //         if(aEl.getAttribute('id').value === 'daun-id'){
+        //             // this는 aEl를 가리킴
+        //             this.style.backgroundColor = 'yellow';
+        //         }
+        //     });
+        // });  
+        const aEls = document.querySelectorAll('a')[0];
+        aEls.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            this.style.backgroundColor = 'yellow'
+        });
+
+        const aEls2 = document.querySelectorAll('a')[1];
+        aEls2.addEventListener('click', function(e) {
+            e.preventDefault();
+
+            this.style.backgroundColor = 'red'
+        });
+
+        // aEls.forEach(aEl => {
+        //     aEl.addEventListener('click', function(e){
+        //         // 기본 이벤트를 취소
+        //         e.preventDefault();
+
+        //         // this는 aEl를 가리킴
+        //         this.style.backgroundColor = 'yellow';
+        //     });
+        // });  
+
+    </script>
+</body>
+</html>

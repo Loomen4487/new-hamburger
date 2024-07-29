@@ -1,0 +1,37 @@
+body {
+    margin: 0px;
+    padding: 0px;
+}
+.header {
+    background-color: white;
+    border-bottom: 1px solid blueviolet;
+}
+.container {
+    width: 980px;
+    margin: auto;
+}
+.container-left {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.logo {
+    margin-right: 5px;
+    float: left;
+}
+.logo img {
+    display: block;
+}
+.menu {
+    float: left;
+}
+.menu-item {
+    font-size: 16px;
+    padding: 8px 10px;
+    float: left;
+    line-height: 1;
+}
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}

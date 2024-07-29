@@ -1,0 +1,83 @@
+.container {
+    background-color: royalblue;
+    width: 240px;
+    height: 170px;
+    display: flex;
+    /* 밑에 5개는 무조건 기억할 것 */
+    /* flex-direction: row; */
+    /* flex-wrap: wrap; */
+    /* justify-content: space-around;         메인축 */
+    /* align-content: space-around;           교차축 */
+    /* align-items: center; */
+    /* flex-flow: row wrap; */
+}
+
+.container .item {
+    width: 100px;
+    height: 100px;
+    border: 3px dashed red;
+    background-color: orange;
+}
+
+.container .item:first-child { 
+    /* flex-grow: 0; */
+    /* flex-shrink: 1; */
+}
+
+.container .item:nth-child(2) { 
+    /* order: 17; */
+    /* flex-grow: 2; */
+    /* flex-shrink: 0; */
+}
+
+.container .item:nth-child(3) { 
+    /* order: -1 */
+    /* flex-grow: 1; */
+    /* flex-shrink: 0; */
+}
+
+.container .item:nth-child(4) { 
+
+}
+
+.container .item:last-child { 
+    /* order: 2; */
+}
+
+
+.container2 {
+    margin-top: 10px;
+    background-color: royalblue;
+    width: 500px;
+    height: 170px;
+    display: flex;
+}
+.container2 .item2 {
+    width: 100px;
+    height: 100px;
+    border: 3px dashed red;
+    background-color: orange;
+    color: white;
+    text-align: center;
+    flex-basis: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container2 .item2:first-child {
+    width: 140px;
+    flex-grow: 1;
+    /* flex-basis: 0; */
+}
+
+.container2 .item2:nth-child(2) {
+    width: 140px;
+    flex-grow: 1;
+    /* flex-basis: 0; */
+}
+
+.container2 .item2:last-child {
+    width: 240px;
+    flex-grow: 2;
+    /* flex-basis: 0; */
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const pw ='';
+        if(pw.length < 4) {
+            console.log('비밀번호는 최소 4자리 이상 입력해주세요.')
+        }else{
+            console.log('로그인 되셨습니다.')
+        }
+
+        const email1 = 'test!naver.com';
+        if(email1.includes('@') === false){
+            console.log('올바른 이메일 형식이 아닙니다.');
+        }else {
+            console.log('로그인 되셨습니다.')
+        }
+
+        const email2 = 'test!naver.com';
+        if(email2.indexOf('@') === -1) {
+            console.log('올바른 이메일 형식이 아닙니다.');
+        }
+
+
+        const arr = [10, 20, 30];
+        for(let i = 0; i <arr.length; i++){
+            console.log(arr[i]);
+        }
+
+        const arr2 = [10, 20, 30, 40];
+        arr2.push(50);
+        console.log(arr2);
+        arr2.pop();
+        console.log(arr2)
+        arr2.unshift(0);
+        console.log(arr2);
+        arr2.shift();
+        console.log(arr2);
+
+        // const arr3 = [10, 20, 30, 40];
+        // arr3.forEach(funtion(v){
+        //     console.log(v);
+        // });
+        // console.log(arr3)
+
+        const date1 = new Date();
+        console.log(date1);
+        const date2 = new Date(2024, 11, 25);
+        console.log(date2);
+        const date3 = new Date(2024, 11, 25, 18, 30, 50);
+        console.log(date3);
+
+        const date4 = new Date(2022, 11, 25, 18, 30, 50);
+        const dateFormat = `${date4.getFullYear()}-${date4.getMonth()+1}-${date4.getDate()}
+        ${date4.getHours()}:${date4.getMinutes()}:${date4.getSeconds()}`;
+        console.log(dateFormat);
+
+
+        const date5 = new Date('2022-12-23');
+        const date6 = new Date('2022-12-25');
+        const dateDiff = date2.getTime() - date1.getTime();
+        const interval = dateDiff / (24* 60 * 60 * 1000);
+        console.log(`두 날짜의 차이는 ${interval} 일입니다.`);
+
+        const floatNum =10.52;
+        Math.floor(floatNum);
+        Math.ceil(floatNum);
+        Math.round(floatNum);
+        console.log(Math.floor(floatNum));
+        console.log(Math.ceil(floatNum));
+        console.log(Math.round(floatNum));
+    </script>
+</body>
+</html>

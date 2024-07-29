@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const person = null;
+        if(!person) {
+            console.log('person이 없습니다')
+        }
+
+        console.log(!undefined);
+        console.log(!null);
+        console.log(!0);
+        console.log(!'');
+        console.log(!NaN);
+
+        console.log(!3);
+        console.log(!'hello');
+        console.log(!['array']);
+        console.log(![]);
+        console.log(!{value:1});
+
+        // const value = {a: 1};
+        // if(value) {
+        //     console.log('value가 truthy 하네요.');
+        // }
+
+        const value = {a : 1};
+        const truthy = value ? true : false;
+
+        console.log(truthy)
+
+        // function getName(animal) {
+        //     const name = anmimal && animal.name;
+        //     return name ||'이르밍 ㅓㅇㅄ는 동물입니다.';
+        // }
+
+        // const name = getName(namelsessDog);
+        // console.log(name)
+
+        function calculateCircleArea(r) {
+            return Math.PI * r * r;
+        }
+        // 조건문 더 스마트 하게 쓰기
+        function getSound(animal) {
+            switch (animal) {
+                case '개':
+                return '멍멍!';
+                case '고양이':
+                return '야옹~';
+                case '참새':
+                return '짹짹';
+                case '비둘기':
+                return '구구 구 구';
+                default:
+                return '...?';
+                }
+            }
+
+            function getSound(animal) {
+            const sounds = {
+                개: '멍멍!',
+                고양이: '야옹~',
+                참새: '짹짹',
+                비둘기: '구구 구 구'
+            };
+  return sounds[animal] || '...?';
+}
+
+console.log(getSound('개')); // 멍멍!
+console.log(getSound('비둘기')); // 구구 구 구
+
+function makeSound(animal) {
+  const tasks = {
+    개() {
+        console.log('멍멍');
+        },
+        고양이() {
+        console.log('고양이');
+        },
+        비둘기() {
+        console.log('구구 구 구');
+    }
+  };
+  if (!tasks[animal]) {
+    console.log('...?');
+        return;
+    }
+    tasks[animal]();
+    }
+
+    getSound('개');
+    getSound('비둘기');
+;    </script>
+</body>
+</html>
