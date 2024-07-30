@@ -3,74 +3,68 @@
     background-color: black;
     color: white;
     display: flex;
-    align-items: center; /* 수직 중앙 정렬 */
+    align-items: center;
     font-size: 15px;
     margin: 0 auto;
-    padding: 15px 40px;
+    padding: 15px 0px;
     border: none;
     box-shadow: none;
     list-style: none;
 }
-
 .smap li {
-    display: inline; /* li 요소를 인라인으로 처리 */
-    margin-right: 10px; /* 각 li 요소 사이의 간격 조정 */
+    display: inline;
+    margin-right: 10px;
 }
-
+.smap li a {
+    color: white;
+    text-decoration: none;
+}
 .containerBox {
     position: relative;
 }
-
 .containerBox .web_container {
-    /* 필요 시 추가 스타일 */
+    
 }
-
 .containerBox .web_container .sub_tit_wrap {
     display: flex;
-    justify-content: space-between; /* 페이지 타이틀과 버튼들을 양 끝에 배치 */
-    align-items: center; /* 수직 정렬 중앙 */
+    justify-content: space-between;
+    align-items: center;
     border: none;
     box-shadow: none;
     width: 100%;
-    padding: 10px 0; /* 여백 조정을 위해 패딩 추가 */
+    padding: 10px 0;
 }
-
 .containerBox .web_container .sub_tit_wrap .page_tit {
-    margin: 0; /* 페이지 타이틀의 여백 제거 */
+    margin: 0;
     font-size: 2.5rem;
     line-height: 100%;
     color: brown;
     display: flex;
-    align-items: center; /* 수직 중앙 정렬 */
+    align-items: center;
 }
-
 .containerBox .web_container .sub_tit_wrap .sub_tit {
     position: relative;
     display: flex;
-    align-items: center; /* 수직 중앙 정렬 */
+    align-items: center;
     margin-top: 30px;
 }
-
 .containerBox .web_container .sub_tit_wrap .sub_tit ul {
-    display: flex; /* li 요소들을 가로로 정렬 */
-    align-items: center; /* 수직 중앙 정렬 */
-    margin: 0; /* 상단 마진 제거 */
-    padding: 0; /* 패딩 제거 */
-    list-style: none; /* 기본 리스트 스타일 제거 */
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
     gap: 0px;
 }
-
 .containerBox .web_container .sub_tit_wrap .sub_tit ul li {
     display: flex;
-    align-items: center; /* 수직 중앙 정렬 */
+    align-items: center;
     border: none;
     box-shadow: none;
-    margin-right: 0px; /* 리스트 아이템 간격 조정 */
+    margin-right: 0px;
 }
-
 button {
-    color: #e22219;
-    border-bottom-color: #e22219;
+    color: grey; 
     border: none;
     box-shadow: none;
     background-color: transparent;
@@ -78,22 +72,36 @@ button {
     padding: 5px 20px;
     font-size: 1rem;
     align-self: center;
-    margin: 0; /* 여백 제거 */
+    margin: 0;
+    text-decoration: none; 
 }
-
-button:focus, button:hover {
-    outline: none;
-    background-color: rgba(226, 34, 25, 0.1);
+.btn_click a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: 700;
 }
-
+.btn_click:hover:not(.active) {
+    color: black; 
+    text-decoration: none; 
+}
+.btn_click.active {
+    color: red;
+    text-decoration: underline; 
+    text-decoration-color: red;
+    text-underline-offset: 8px; 
+}
 .search_wrap .search_itmes {
     display: flex;
     justify-content: center;
     margin: 18px 0;
     background-color: rgb(244, 244, 242);
     padding: 20px;
-    border: none;
+    border:none;
     box-shadow: none;
+}
+.search_itmes input {
+    width: 50%;
+    margin: 0;
 }
 
 
@@ -135,7 +143,7 @@ button:focus, button:hover {
 }
 .notice_list .notice_list_items {
     padding: 12px 0;
-    border-bottom-width: 1px;
+    border-bottom-width: 3px;
 	border-bottom-style: solid;
 	border-bottom-color: brown;
 }
@@ -190,6 +198,9 @@ button:focus, button:hover {
     display: inline;
     text-align: center;
 }
+.pagination li:first-child {
+    display: none;
+}
 
 .pagination a {
     display: block;
@@ -198,18 +209,6 @@ button:focus, button:hover {
     padding: 5px 12px;
     color: #96a0ad;
     line-height: 1.5;
-}
-
-.first {
-    margin-right: 15px;
-}
-
-.last {
-    margin-left: 15px;
-}
-
-.first:hover, .last:hover, .left:hover, .right:hover {
-    color: #2e9cdf;
 }
 
 .pagination a.active {
@@ -228,16 +227,6 @@ button:focus, button:hover {
     height: 30px;
     line-height: 30px;
     border-radius: 100%;
-}
-
-.modal .num:hover {
-    background-color: #2e9cdf;
-    color: #ffffff;
-}
-
-.modal .num:active {
-    background-color: #2e9cdf;
-    cursor: pointer;
 }
 
 .arrow-left {
@@ -265,7 +254,7 @@ button:focus, button:hover {
 	border-top-width: 3px;
 	border-top-style: solid;
 	border-top-color: #e22219;
-	border-bottom-width: 1px;
+	border-bottom-width: 3px;
 	border-bottom-style: solid;
 	border-bottom-color: rgb(173, 170, 170);
 }
@@ -301,4 +290,7 @@ button:focus, button:hover {
 	height: 68px;
 	margin-top: 20px; /* 버튼과 경계선 사이의 간격 설정 */
 }
-/* 주석 시진핑 */
+.notice_detail_list_btn a {
+    color: white;
+    text-decoration: none;
+}

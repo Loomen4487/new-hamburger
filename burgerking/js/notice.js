@@ -1,4 +1,21 @@
-function searchNotice() {
-	const searchTextBoxEl = document.querySelector('#search_bar');
-	window.location.href = `http://127.0.0.1:5501/notice_list.html?search=${searchTextBoxEl.value}`;
-}
+
+    document.addEventListener('DOMContentLoaded', function () {
+        const buttons = document.querySelectorAll('.btn_click');
+
+        buttons.forEach(button => {
+            button.addEventListener('click', function (event) {
+                
+                event.preventDefault();
+
+                
+                buttons.forEach(btn => btn.classList.remove('active'));
+                
+                this.classList.add('active');
+            });
+
+            
+            button.querySelector('a').addEventListener('click', function(e) {
+                e.preventDefault();
+            });
+        });
+    });
