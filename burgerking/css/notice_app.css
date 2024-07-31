@@ -1,0 +1,84 @@
+.app_down {
+
+}
+.app_down .pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.store_down {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mini_box {
+    width: 500px;
+    height: 200px;
+}
+.word {
+    
+}
+.mini_pic {
+    width: 204px;
+    height: 64px;
+    margin-bottom: 10px;
+    display: block;
+    
+}
+.left_align {
+    margin: 0; 
+    font-size: 1.5em; 
+    font-weight: bold; 
+}
+p {
+    margin: 0;
+    font-size: 1em; 
+    line-height: 1.5; 
+}
+
+.how_to_use {
+    background-color: rgb(242, 235, 230);
+}
+.how_to_use h3, 
+.how_to_use p.use_text {
+    margin-left: 168px;
+}
+.how_to_use .app_ex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.how_to_use .app_ex_text {
+    align-items: center;
+    justify-content: center;
+}
+
+.app_ex {
+    width: 100%;
+    margin: 10px auto;
+    position: relative;
+}
+.button_img img {
+    width: 100%;
+    vertical-align: middle;
+}
+.app_ex_text {
+    position: absolute;
+    top: 80%;
+    color: brown;
+}
+.app_ex_text:nth-child(1) {
+}
+
+
+
+
+.app_warning {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(242, 235, 230);
+}
+.warning1 {
+    margin-left: 25px;
+}

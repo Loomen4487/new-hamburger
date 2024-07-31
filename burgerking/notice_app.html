@@ -7,6 +7,7 @@
     <link rel="shortcut icon" href="./photo/pngwing.com_ico.ico" />
     <link rel="icon" href="./photo/pngwing.com.png" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="./css/notice_app.css">
     <link rel="stylesheet" href="./css/notice_list.css">
     <script defer src="./js/notice.js"></script>
 </head>
@@ -69,62 +70,112 @@
             <img src="./photo/app.jpg" alt="배달앱">
         </div>
         <div class="store_down">
-            <div class="word">
-                <h3>
-                    스토어 다운로드
-                </h3>
-                <p>
-                    애플 앱스토어와 구글 플레이스토어에서<br>버거킹 앱을 다운로드 해보세요.
-                </p>
-            </div>
-            <div class="mini_pic">
-                <button type="button" class="btn_click" onClick="javascript: window.open('https://play.google.com/store/apps/details?id=kr.co.burgerkinghybrid', '_blank');">
-                    <img src="./photo/btn_googleplay.38ae95ae.png" alt="구글 다운로드" />
-                </button>
-                <button type="button" class="btn_click" onClick="javascript: window.open('https://apps.apple.com/kr/app/%EB%B2%84%EA%B1%B0%ED%82%B9-%ED%96%84%EB%B2%84%EA%B1%B0-%ED%82%B9%EC%98%A4%EB%8D%94-%EB%94%9C%EB%A6%AC%EB%B2%84%EB%A6%AC/id1017567032', '_blank');">
-                    <img src="./photo/btn_appstore.9bed720a.png" alt="앱스토어" />
-                </button>
-            </div>
-            <div class="word">
-                <h3>
-                    QR코드 다운로드
-                </h3>
-                <p>
-                    QR코드를 스캔하여<br>버거킹 앱을 다운로드 해보세요.
-                </p>
+            <div class="mini_box">
+                <div class="word">
+                    <h3 class="left_align">
+                        스토어 다운로드<br>
+                    </h3>
+                    <p>
+                        애플 앱스토어와 구글 플레이스토어에서<br>버거킹 앱을 다운로드 해보세요.
+                    </p>
+                </div>
                 <div class="mini_pic">
-                    <img src="./photo/qr.jpg" alt="qrcode">
+                    <button type="button" class="btn_click" onClick="javascript: window.open('https://play.google.com/store/apps/details?id=kr.co.burgerkinghybrid', '_blank');">
+                        <img src="./photo/btn_googleplay.38ae95ae.png" alt="구글 다운로드" />
+                    </button>
+                    <button type="button" class="btn_click" onClick="javascript: window.open('https://apps.apple.com/kr/app/%EB%B2%84%EA%B1%B0%ED%82%B9-%ED%96%84%EB%B2%84%EA%B1%B0-%ED%82%B9%EC%98%A4%EB%8D%94-%EB%94%9C%EB%A6%AC%EB%B2%84%EB%A6%AC/id1017567032', '_blank');">
+                        <img src="./photo/btn_appstore.9bed720a.png" alt="앱스토어" />
+                    </button>
                 </div>
             </div>
-            <div class="how_to_use">
-                <h3>
-                    앱 이용방법
-                </h3>
-                <p>
-                    버거킹 앱으로 편리하게 주문할 수 있는 방법과 고객님이 누릴 수 있는 혜택들을 소개해 드립니다.
-                </p>
-                <div class="mini_pic">
+            <div class="mini_box">
+                <div class="word">
+                    <h3 class="left_align">
+                        QR코드 다운로드
+                    </h3>
+                    <p>
+                        QR코드를 스캔하여<br>버거킹 앱을 다운로드 해보세요.
+                    </p>
+                    <div class="mini_pic">
+                        <img src="./photo/qr.jpg" alt="qrcode">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="how_to_use">
+            <h3>
+                앱 이용방법
+            </h3>
+            <p class="use_text">
+                버거킹 앱으로 편리하게 주문할 수 있는 방법과 고객님이 누릴 수 있는 혜택들을 소개해 드립니다.
+            </p>
+            <div class="app_ex">
+                <div class="button_img">
                     <button type="button" class="btn_click" >
+                        <div class="app_ex_text">
+                            <p>멤버쉽<br>이용안내</p>
+                        </div>
                         <img src="./photo/bg_appguide_membership.7136435b.png" alt="앱스토어" />
-                        <p>멤버십<br>이용안내</p>
-                    </button>
-                    <button type="button" class="btn_click" >
-                        <img src="./photo/bg_appguide_delivery.c3f2ced5.png" alt="앱스토어" />
-                        <p>딜리버리<br>이용안내</p>
-                    </button>
-                    <button type="button" class="btn_click" >
-                        <img src="./photo/bg_appguide_king.6d88bf99.png" alt="앱스토어" />
-                        <p>킹오더<br>이용안내</p>
-                    </button>
-                    <button type="button" class="btn_click" >
-                        <img src="./photo/bg_appguide_search.ff2855d3.png" alt="앱스토어" />
-                        <p>매장찾기<br>이용안내</p>
-                    </button>
-                    <button type="button" class="btn_click" >
-                        <img src="./photo/bg_appguide_coupon.b22de484.png" alt="앱스토어" />
-                        <p>쿠폰<br>이용안내</p>
                     </button>
                 </div>
+                <div class="button_img">
+                    <button type="button" class="btn_click" >
+                        <div class="app_ex_text">
+                            <p>딜리버리<br>이용안내</p>
+                        </div>
+                        <img src="./photo/bg_appguide_delivery.c3f2ced5.png" alt="앱스토어" />
+                    </button>
+                </div>
+                <div class="button_img">
+                    <button type="button" class="btn_click" >
+                        <div class="app_ex_text">
+                            <p>킹오더<br>이용안내</p>
+                        </div>
+                        <img src="./photo/bg_appguide_king.6d88bf99.png" alt="앱스토어" />
+                    </button>
+                </div>
+                <div class="button_img">
+                    <button type="button" class="btn_click" >
+                        <div class="app_ex_text">
+                            <p>매장찾기<br>이용안내</p>
+                        </div>
+                        <img src="./photo/bg_appguide_search.ff2855d3.png" alt="앱스토어" />
+                    </button>
+                </div>
+                <div class="button_img">
+                    <button type="button" class="btn_click" >
+                        <div class="app_ex_text">
+                            <p>구폰<br>이용안내</p>
+                        </div>
+                        <img src="./photo/bg_appguide_coupon.b22de484.png" alt="앱스토어" />
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="app_warning">
+            <div class="warning">
+                <h3 class="warning1">
+                    유의사항
+                </h3>
+                <ul style="font-size: 12px;">
+                    <h3>이용 가능 단말기 안내</h3>
+                    <li>Android 4.4 이상, IOS 9.0 이상</li>
+                    <li>이 버전 이하의 단말기에서는 구글 플레이스토어 또는 애플 앱스토어에 버거킹앱이 표시되지 않습니다.</li>
+                    <li>단말기 OS 업그레이드 후 버거킹앱을 다운로드 하거나 모바일 홈페이지를 이용하시길 바랍니다.</li>
+                    <li>단말기의 보안 유지를 위해 운영체제와 사용하는 백신 프로그램을 최신 버전으로 업데이트하시길 권장합니다<br>또한, 백신프로그램을 이용하여 수시로 바이러스 검사하시길 바랍니다.</li>
+                    <li>버거킹 홈페이지, 버거킹앱을 통한 주문 또는 개인정보를 입력해야 하는 서비스 이용할 경우 출처가 불분명하거나 보안 설정이 없는 무선 랜(Wi-Fi)을 이용하기보다는 무선<br>인터넷(4G, LTE)을 이용 하시기 바랍니다.</li>
+                </ul>
+                <br>
+                <ul style="font-size: 12px;">
+                    <h3>이용 가능 회원</h3>
+                    <li>정상적으로 이용 가능한 온라인회원, SNS로그인 회원 또는 본인인증을 완료한 회원은 이용할 수 있습니다.</li>
+                    <li>온라인회원가입은 버거킹 홈페이지, 버거킹앱에서 가능합니다.</li>
+                </ul>
+                <br>
+                <ul style="font-size: 12px;">
+                    <h3>참고사항</h3>
+                    <li>무선 인터넷(4G, LTE)을 이용할 경우, 회원님이 가입한 이동통신사의 요금제에 따라 데이터 이용요금이 부과될 수 있습니다.<br>단, 무선 랜(Wi-Fi)이용 시, 데이터 요금이 발생하지 않습니다.</li>
+                </ul>
             </div>
         </div>
     </div>
