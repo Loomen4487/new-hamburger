@@ -1,0 +1,56 @@
+.inquiry_box {
+    display: flex;
+    padding: 40px 0px 80px 0px;
+    
+}
+
+.inquiry_word {
+    margin-right: 10px; 
+    padding-top: 200px;
+}
+
+.inquiry_word h3 {
+    padding: 30px 0;
+    font-size: 2.75rem;
+}
+.inquiry_word p {
+    display: flex;
+    padding-bottom: 5px;
+}
+.inquiry_word p a {
+    font-weight: bold;
+    text-decoration: none;
+}
+.inquiry_word p a:link {
+    color: brown;
+}
+.inquiry_word p a:visited {
+    color: brown;
+}
+.inquiry_box .mini_pic1 {
+    padding-top: 100px;
+}
+
+
+.inquiry_wrap {
+    display: flex;
+    /* background-color: orange; */
+    padding: 80px 15px 100px 0px;
+}
+.inquiry_service {
+    padding-right: 350px;
+}
+.inquiry_service2 {
+
+}
+.pic_word {
+    display: flex;
+    gap: 25px;
+    max-width: 100%;
+    padding-bottom: 30px;
+    font-size: 16px;
+}
+.pic_word.line {
+    border-left: solid 1px;
+    padding-left: 55px;
+}
